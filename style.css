@@ -1,0 +1,119 @@
+.sky
+{
+  
+  background-color:#87ceeb;
+  display:inline-block;
+  width: 100% ;
+}
+.img1{
+  position: relative;
+  left:177%;
+  animation-name: cloudd1;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+
+}
+
+.img2
+{
+  position: relative;
+  left:45%;
+  opacity: 0.6;
+  height: 30%;
+  width: 15%;
+   animation-name: cloudd2;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+
+
+}
+.grass
+{
+  height: 130px;
+  background-color: green;
+  /* display: inline; */
+  width: 100%;
+}
+
+
+.road
+{
+  background-color:	rgb(48,48,48);
+  height: 280px;
+  /* display: inline; */
+  
+}
+#mark
+{
+  margin-top: 0px;
+position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 160px;
+  float: left;
+}
+h2
+{
+  padding: 0px;
+  margin-top: 0px;
+}
+.mario
+{
+  padding: 0px;
+  margin-bottom:0px ;
+ 
+  position: relative;
+ 
+  /* animation-name: jump ;
+  animation-duration: 4s; */
+  animation: drive 8s both infinite ease-out,
+             jump 1s 2.5s ease infinite;
+
+}
+.luigi
+{
+  padding: 0px;
+  margin-bottom:0px ;
+ 
+  position: relative;
+  animation-name: drive;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate-reverse; */
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  /* animation-name: jump ;
+  animation-duration: 4s; */
+
+}
+
+
+h2
+{
+  color: white;
+
+}
+@keyframes drive
+{
+  from{left: -200px;}
+  to{left: 1500px;}
+
+}
+@keyframes cloudd2
+{
+  from{left: 45%;}
+  to{left: 0%;}
+}
+@keyframes cloudd1
+{
+  from{left: 177%;}
+  to{left: -25%;}
+}
+@keyframes jump
+{
+  0%{bottom:0px;}
+  50%{top:30px;}
+  100%{bottom:0px;}
+
+
+}
