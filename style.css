@@ -1,119 +1,120 @@
-.sky
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
 {
   
-  background-color:#87ceeb;
-  display:inline-block;
-  width: 100% ;
-}
-.img1{
-  position: relative;
-  left:177%;
-  animation-name: cloudd1;
-  animation-duration: 24s;
-  animation-iteration-count: infinite;
-
+    background-image: url("images/bg-intro-desktop.png");
 }
 
-.img2
+.parent
 {
-  position: relative;
-  left:45%;
-  opacity: 0.6;
-  height: 30%;
-  width: 15%;
-   animation-name: cloudd2;
-  animation-duration: 24s;
-  animation-iteration-count: infinite;
-
+     width: 1280px;
+     height:610px; 
+    
+     background: rgb(231, 8, 8,0.6);
 
 }
-.grass
+.child
 {
-  height: 130px;
-  background-color: green;
-  /* display: inline; */
-  width: 100%;
+    display: flex;
+    position: relative;
+    top: 20%;
+    /* background-color: lime; */
+    justify-content: space-evenly;
+    align-items: center;
 }
+.grchild1
+{
+    height: 400px;
+    width: 300px;
+    /* background-color: lightgreen; */
 
+}
+.grchild2
+{
+    height: 400px;
+    width: 600px;
+    /* background-color: lightgreen; */
 
-.road
+} 
+.text
 {
-  background-color:	rgb(48,48,48);
-  height: 280px;
-  /* display: inline; */
-  
+    position: relative;
+    top: 15%;
 }
-#mark
-{
-  margin-top: 0px;
-position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 160px;
-  float: left;
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
 }
-h2
+p
 {
-  padding: 0px;
-  margin-top: 0px;
+    color: white;
+    text-align:right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    
 }
-.mario
+.form
 {
-  padding: 0px;
-  margin-bottom:0px ;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 15%;
+    top: -50px;
+    border-radius: 20px;
+    background-color: linen;
+}
+input
+{
+    display: block;
+    text-align: center;
+    margin: 30px 30px 30px 30px;
+    width: 340px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: larger;
+}
+.in
+{
+    position: relative;
+    top: 10%;
+}
+.btn
+{
+    width: 340px;
+    height: 40px;
+    background-color:  green;
+    margin-left: 22px;
+    border-radius: 5px;
+}
+.btn p
+{
+    text-align: center;
+    line-height: 40px;
  
-  position: relative;
- 
-  /* animation-name: jump ;
-  animation-duration: 4s; */
-  animation: drive 8s both infinite ease-out,
-             jump 1s 2.5s ease infinite;
 
+     
 }
-.luigi
+.blue
 {
-  padding: 0px;
-  margin-bottom:0px ;
- 
-  position: relative;
-  animation-name: drive;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  /* animation-direction: alternate-reverse; */
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  /* animation-name: jump ;
-  animation-duration: 4s; */
-
+    position: relative;
+    top: 80px;
+    left: 660px;
+    width: 360px;
+    height: 40px;
+    background-color:darkblue;
+    border-radius:5px ;
 }
-
-
-h2
+.blue p
 {
-  color: white;
-
-}
-@keyframes drive
-{
-  from{left: -200px;}
-  to{left: 1500px;}
-
-}
-@keyframes cloudd2
-{
-  from{left: 45%;}
-  to{left: 0%;}
-}
-@keyframes cloudd1
-{
-  from{left: 177%;}
-  to{left: -25%;}
-}
-@keyframes jump
-{
-  0%{bottom:0px;}
-  50%{top:30px;}
-  100%{bottom:0px;}
-
+        text-align: center;
+       line-height: 40px;
+    font-weight:600;
 
 }
